@@ -2,19 +2,24 @@ This repository contains a simple recipe generator powered by AWS AI services. I
 
 https://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai.html
 
-Original tutorial uses model Calude 3 Sonnet and it doesn't work (or I didn't make it work myself). This project uses model "Amazon Nova Lite".
+Original tutorial uses model Calude 3 Sonnet, which no longer works (or I didn't make it work myself). This project uses model "Amazon Nova Lite".
 
-Follow the original tutorial for full setup. Below is simplified version using this repository.
+## Setup
 
-- Create AWS account
+Follow the original tutorial for full setup. Below is simplified version:
+
+- Create an AWS account
 - Create static webiste and configure your AWS CLI/SSO
-- Clone this repo
+- Clone this repository
 - Run "npm install" in root
-- Run "npx ampx sandbox" in one terminal and "npm run dev" in another terminal
-- Go to http://localhost:5173/ and create account and login (Port might be different if port 5173 is used. Check from terminal)
+- Run "npx ampx sandbox" in one terminal
+- Run "npm run dev" in another terminal
+- Open http://localhost:5173/ (seen in terminal) and create account
 - Receipe generator should work
 
-If doesn't, there might be changes in following files:
+## Troubleshooting
+
+If it doesn't work, check these files::
 - ./amplify/auth/resource.ts
 - ./amplify/data/resource.ts
 - ./amplify/data/bedrock.js
@@ -24,4 +29,5 @@ If doesn't, there might be changes in following files:
 - ./src/index.css
 - ./src/main.tsx
 
-Take them from this repo and replace fully. Npm install or npx ampx sandbox might edit these.
+You can replace them with versions from this repository if needed.
+Note: `npm install` or `npx ampx sandbox` may modify some of these files.
