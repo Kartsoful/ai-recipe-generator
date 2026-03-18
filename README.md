@@ -11,7 +11,7 @@ Follow the original tutorial for full setup. Below is simplified version using t
 - Clone this repo
 - Run "npm install" in root
 - Run "npx ampx sandbox" in one terminal and "npm run dev" in another terminal
-- Create account
+- Go to http://localhost:5173/ and create account and login (Port might be different if port 5173 is used. Check from terminal)
 - Receipe generator should work
 
 If doesn't, there might be changes in following files:
