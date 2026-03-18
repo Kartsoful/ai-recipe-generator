@@ -15,13 +15,13 @@ Follow the original tutorial for full setup. Below is simplified version using t
 - Receipe generator should work
 
 If doesn't, there might be changes in following files:
-./amplify/auth/resource.ts
-./amplify/data/resource.ts
-./amplify/data/bedrock.js
-./amplify/backend.ts
-./src/app.css
-./src/app.tsx
-./src/index.css
-./src/main.tsx
+- ./amplify/auth/resource.ts
+- ./amplify/data/resource.ts
+- ./amplify/data/bedrock.js
+- ./amplify/backend.ts
+- ./src/app.css
+- ./src/app.tsx
+- ./src/index.css
+- ./src/main.tsx
 
 Take them from this repo and replace fully. Npm install or npx ampx sandbox might edit these.
